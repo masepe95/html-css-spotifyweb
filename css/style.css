@@ -34,7 +34,6 @@ body {
   h3 {
 	margin-top: 10px;
 	margin-bottom: 5px;
-	text-align: center;
   }
 
 	h4 {
@@ -54,47 +53,100 @@ body {
 		border-radius: 50%;
 	}
 
-	.sidebar-top img{
-		scale: 0.5;
+	.xs-icon-list > img{
+		scale: 0.8;
+	}
+	
+	.flex{
+		display: flex;
 	}
 
+	
+	.pd-bott-10{
+		padding-bottom: 10px;
+		padding-left: 20px;
+	}
+	/*UTILITIES END*/
+	
+	/*LAYOUT*/
+	/*GENERAL CONTAINER*/
+	#container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		position: relative;
+	}
+	/*GENERAL CONTAINER END*/
+	
+	/*MAIN CONTENT*/
+	#main-window {
+		flex-grow: 1;
+		background-color: #141922;
+		display: flex;
+		margin-bottom: 85px;
+	}
+	
+	/*SIDEBAR*/
+	#sidebar {
+		min-width: 40px;
+		height: 100%;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.sidebar-top {
+		flex-grow: 1;
+	}
 
-  /*UTILITIES END*/
-  
-  /*LAYOUT*/
-  /*GENERAL CONTAINER*/
-  #container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	position: relative;
-  }
-  /*GENERAL CONTAINER END*/
-  
-  /*MAIN CONTENT*/
-  #main-window {
-	flex-grow: 1;
-	background-color: #141922;
-	display: flex;
-	margin-bottom: 85px;
-  }
-  
-  /*SIDEBAR*/
-  #sidebar {
-	min-width: 40px;
-	background-color: black;
-	display: flex;
-	flex-direction: column;
-  }
-  
-  .sidebar-top {
-	flex-grow: 1;
-  }
-  
-  .sidebar-bottom img {
-	scale: 0.5;
-  }
+	
+	.sidebar-bottom img {
+		scale: 0.5;
+	}
+	
+	.sidebar-list-top{
+		display: none;
+	}
+	
+	.sidebar-list-bottom{
+		display: none;
+	}
+	#mainlogo{
+		width: 215px;
+		padding: 20px;
+	}
+	.sidebar-list-top img, .sb-section img{
+		width: 30px;
+	}
+
+	.pd-bott-10 > span{
+		line-height: 30px;
+		margin-left: 5px;
+	}
+
+	.sidebar-title{
+		font-size: 1rem;
+	}
+
+	.playlist-title.bold{
+		font-size: 1rem;
+		line-height: 35px;
+	}
+
+	.playlist-section{
+		padding-top: 10px;
+	}
+
+	.sb-section a{
+		padding: 3px;
+		color: white;
+	}
+	.sb-section img{
+		scale: 1.2;
+	}
+
+	
   /*SIDEBAR END*/
   
   /*CONTENT*/
@@ -191,5 +243,9 @@ body {
 
 	.xs-icon-list{
 		display: none;
+	}
+
+	.sidebar-list-top, .sidebar-list-bottom{
+		display: block;
 	}
   }
