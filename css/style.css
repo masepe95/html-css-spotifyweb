@@ -22,17 +22,16 @@ body {
 	font-weight: bold;
   }
 
-  aside{
-	margin-bottom: 85px;
-  }
   /*UTILITIES END*/
   
   /*LAYOUT*/
   /*GENERAL CONTAINER*/
   #container {
+	min-width: 500px;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	position: relative;
   }
   /*GENERAL CONTAINER END*/
   
@@ -41,6 +40,7 @@ body {
 	flex-grow: 1;
 	background-color: #0c0f14;
 	display: flex;
+	margin-bottom: 85px;
   }
   
   /*SIDEBAR*/
@@ -114,3 +114,9 @@ body {
   }
   /*BOTTOM PLAYER END*/
   /*LAYOUT END*/
+
+  /* ***************RESPONSIVE***************** */
+
+  @media screen and (min-width: 768px) {
+
+  }
