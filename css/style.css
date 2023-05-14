@@ -67,13 +67,17 @@ body {
 		padding-left: 20px;
 	}
 
-	a {
+	footer a {
 		color: white;
 		text-decoration: none;
 	}
 
 	span, p, img{
 		cursor: pointer;
+	}
+	span:hover, p:hover{
+		color: #1dd05d;
+
 	}
 
 	/*UTILITIES END*/
@@ -117,6 +121,7 @@ body {
 	
 	.sidebar-list-top{
 		display: none;
+		color: gray;
 	}
 	
 	.sidebar-list-bottom{
@@ -125,9 +130,16 @@ body {
 	#mainlogo{
 		width: 215px;
 		padding: 20px;
+		filter: grayscale();
+	}
+
+	#mainlogo:hover {
+		filter: none;
+		
 	}
 	.sidebar-list-top img, .sb-section img{
 		width: 30px;
+		filter: grayscale();
 	}
 
 	.pd-bott-10 > span{
@@ -142,6 +154,7 @@ body {
 	.playlist-title.bold{
 		font-size: 1rem;
 		line-height: 35px;
+		
 	}
 
 	.playlist-section{
@@ -150,13 +163,12 @@ body {
 
 	.sb-section a{
 		padding: 3px;
-		color: white;
+		filter: invert();
 	}
 	.sb-section img{
 		scale: 1.2;
 	}
 
-	
   /*SIDEBAR END*/
   
   /*CONTENT*/
@@ -187,7 +199,10 @@ body {
 	padding: 1em 3em;
 	color: #fff;
 	}
-  
+	.upgrade-btn:hover{
+		border: 2px solid #1dd05d;
+		color:#1dd05d;
+	}
   .scrollable {
 	position: absolute;
 	top: 0;
