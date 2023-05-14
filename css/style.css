@@ -271,6 +271,7 @@ body {
   
   .fa-heart {
 	padding-right: 15px;
+	padding-bottom: 5px;
   }
   /*Album Playing End*/
   
@@ -302,6 +303,7 @@ body {
 	background-color: #535353;
 	border-radius: 5px;
 	position: relative;
+	cursor: pointer;
   }
   
   .partial-bar {
@@ -311,7 +313,7 @@ body {
 	border-radius: 5px;
   }
   
-  .partial-bar:hover::before {
+  .progress-bar:hover::before {
 	content: '';
 	height: 15px;
 	width: 15px;
@@ -386,6 +388,7 @@ body {
 	border-radius: 2px;
 	align-self: center;
 	position: relative;
+	cursor: pointer;
   }
   
   .right-controller-partial-bar {
@@ -393,6 +396,18 @@ body {
 	width: 25%;
 	background-color: #fff;
 	border-radius: 5px;
+  }
+
+  .right-controller-bar:hover::before {
+	content: '';
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	bottom: -5px;
+	left: 23%;
+	cursor: pointer;
   }
   /*BOTTOM PLAYER END*/
   /*LAYOUT END*/
