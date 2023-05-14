@@ -288,7 +288,7 @@ body {
   .player-controller ul {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
   }
   
   .progressbar-and-number {
@@ -326,11 +326,13 @@ body {
   }
   
   .song-progress {
-	padding-right: 30px;
+	padding-right: 10px;
+	font-size: 10px;
   }
   
   .song-duration {
-	padding-left: 30px;
+	padding-left: 10px;
+	font-size: 10px;
   }
   
   .player-controller ul li {
@@ -341,22 +343,16 @@ body {
 	color: #1dd05d;
   }
   
-  .fa-random,
-  .fa-step-backward,
-  .fa-play-circle,
-  .fa-step-forward {
-	padding-right: 20px;
-  }
   
   .fa-random,
   .fa-step-backward,
   .fa-step-forward,
   .fa-redo-alt {
-	font-size: 12px;
+	font-size: 16px;
   }
   
   .fa-play-circle {
-	font-size: 24px;
+	font-size: 28px;
   }
   /*Player Controller End*/
   
@@ -430,4 +426,25 @@ body {
 	.sidebar-list-top, .sidebar-list-bottom{
 		display: block;
 	}
+
+	.song-progress {
+		padding-right: 30px;
+	  }
+	  
+	.song-duration {
+		padding-left: 30px;
+	}
+	.player-controller ul {
+		justify-content: center;
+	  }
+	
+	.fa-random,
+  	.fa-step-backward,
+  	.fa-play-circle,
+  	.fa-step-forward {
+	padding-right: 20px;
+  }
+  	.album-icons {
+	flex-direction: row;
+  }
   }
