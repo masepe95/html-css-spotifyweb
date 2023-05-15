@@ -63,7 +63,7 @@ body {
 
 	
 	.pd-bott-10{
-		padding-bottom: 10px;
+		margin-bottom: 10px;
 		padding-left: 20px;
 	}
 
@@ -231,6 +231,10 @@ body {
 	text-decoration: none;
 	color: #999999;
   }
+
+  .content-menu ul li a:hover{
+	color: #1dd05d;
+  }
   
   .scrollable-content {
 	margin-bottom: 30px;
@@ -350,6 +354,10 @@ body {
 	background-color: #fff;
 	border-radius: 5px;
   }
+
+  .partial-bar:hover {
+	background-color: #1dd05d;
+  }
   
   .progress-bar:hover::before {
 	content: '';
@@ -430,6 +438,9 @@ body {
 	width: 25%;
 	background-color: #fff;
 	border-radius: 5px;
+  }
+  .right-controller-partial-bar:hover{
+	background-color: #1dd05d;
   }
 
   .right-controller-bar:hover::before {
