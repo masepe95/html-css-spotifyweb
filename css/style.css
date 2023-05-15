@@ -221,6 +221,7 @@ body {
 	text-align: center;
   }
   
+  
   .content-menu ul li {
 	display: inline-block;
 	padding-right: 15px;
@@ -228,14 +229,35 @@ body {
   }
   
   .content-menu ul li a {
-	text-decoration: none;
-	color: #999999;
-  }
+	  text-decoration: none;
+	  color: #999999;
+	}
 
   .content-menu ul li a:hover{
 	color: #1dd05d;
   }
-  
+
+  .active-selector{
+	height: 2px;
+	width: 30px;
+	border-radius: 4px;
+	background-color: #1dd05d;
+	position: relative;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%);
+	display: block;
+  }
+  .active-selector-hor{
+	height: 40px;
+	width: 5px;
+	background-color: #1dd05d;
+	position: absolute;
+	top: 10%;
+	left: 00%;
+	display: block;
+  }
+
   .scrollable-content {
 	margin-bottom: 30px;
   }
